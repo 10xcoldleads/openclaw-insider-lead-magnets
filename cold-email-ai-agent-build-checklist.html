@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cold Email AI Agent Build Checklist | OpenClaw Insider</title>
+<style>
+  :root { --ink:#111; --muted:#555; --line:#ddd; --accent:#0b5fff; }
+  @page { margin: 18mm; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 24px 48px;
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink); background: #fff;
+    line-height: 1.55; font-size: 16px;
+    max-width: 760px; margin-left: auto; margin-right: auto;
+  }
+  h1 { font-family: Arial, Helvetica, sans-serif; font-size: 28px; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-family: Arial, Helvetica, sans-serif; font-size: 20px; margin: 28px 0 10px; border-bottom: 2px solid var(--ink); padding-bottom: 6px; }
+  h3 { font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin: 18px 0 8px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 14px; padding-left: 1.3em; }
+  li { margin: 0 0 6px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 24px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f4f4f4; }
+  a { color: var(--accent); }
+  .step { font-family: Arial, Helvetica, sans-serif; }
+  @media print {
+    body { padding: 0; max-width: none; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<h1>Cold Email AI Agent Build Checklist</h1>
+<p><strong>Before any cold email agent goes live</strong></p>
+<p>From Ty Shane · OpenClaw Insider · 10x Cold Leads</p>
+<p>Use this before you connect a sending inbox, before the first live send, and again after any major change to leads, copy, or handoff rules.</p>
+<p>Drawn from the AI Agent Blueprint: start with the recurring job as it already exists, gather the four inputs, test against work the business trusts, then keep a human in the loop where judgment matters.</p>
+<hr>
+<h2>1. Recurring job definition</h2>
+<p>Start here. Do not invent the agent and invent the process at the same time.</p>
+<ul>
+<li>[ ] Write the job in one sentence: what recurring outbound work this agent owns</li>
+<li>[ ] Ask (or document for yourself): "Show me how you already do it"</li>
+<li>[ ] Capture the current path in plain language (lead source → first touch → reply handling → booking → sales handoff)</li>
+<li>[ ] Note who owns each step today (person, tool, or both)</li>
+<li>[ ] Collect examples of finished work the team already trusts (good emails, good replies, good booking notes)</li>
+<li>[ ] List the exceptions the team barely notices anymore (those usually hold the quality bar)</li>
+</ul>
+<p><strong>Pass when:</strong> someone who does the job can read your one-pager and say "yes, that is the work."</p>
+<hr>
+<h2>2. Four inputs (operating knowledge)</h2>
+<p>Collect these before you touch tools. Sharing an SOP gives context. It does not make every output correct.</p>
+<h3>Source</h3>
+<ul>
+<li>[ ] Where do leads / contacts come from?</li>
+<li>[ ] What fields are required before a contact can enter a sequence?</li>
+<li>[ ] What is excluded on purpose (competitors, existing clients, unsubscribed, wrong ICP)?</li>
+</ul>
+<h3>Checks</h3>
+<ul>
+<li>[ ] What does the team verify before a first send?</li>
+<li>[ ] What do they verify before a follow-up?</li>
+<li>[ ] What signals mean "pause" or "escalate to a human"?</li>
+</ul>
+<h3>Finished work</h3>
+<ul>
+<li>[ ] What should a finished first email contain?</li>
+<li>[ ] What should a finished reply contain (and what should it never invent)?</li>
+<li>[ ] What should a booking handoff contain for sales?</li>
+</ul>
+<h3>When something looks wrong</h3>
+<ul>
+<li>[ ] Wrong company / wrong person: stop and flag</li>
+<li>[ ] Unclear or emotional reply: human review before send</li>
+<li>[ ] Booking conflict or no-show path: who owns recovery?</li>
+<li>[ ] Tool failure (CRM, calendar, sending platform): fail closed, alert a person</li>
+</ul>
+<p><strong>Pass when:</strong> each of the four inputs has at least one concrete example attached.</p>
+<hr>
+<h2>3. Cold email workflow map</h2>
+<p>Map the agent to the business process, not to a feature list.</p>
+<table>
+<tr><th>Stage</th><th>What the agent may do</th><th>Human required?</th></tr>
+<tr><td>Leads</td><td>Pull or score candidates against ICP rules</td><td>Define rules; review sample</td></tr>
+<tr><td>Write</td><td>Draft first touch and follow-ups from approved facts</td><td>Approve voice guide + sample set</td></tr>
+<tr><td>Replies</td><td>Classify and draft responses</td><td>Approve sensitive / sales-intent replies</td></tr>
+<tr><td>Book</td><td>Offer times / create holds per calendar rules</td><td>Confirm booking policy</td></tr>
+<tr><td>Sales handoff</td><td>Summarize context into CRM / Slack / email</td><td>Confirm destination + fields</td></tr>
+</table>
+<ul>
+<li>[ ] Leads stage scoped and sample-checked</li>
+<li>[ ] Write stage limited to approved facts and offers (no invented claims)</li>
+<li>[ ] Replies stage has classification labels (interested, not now, OOO, unsubscribe, angry, wrong person)</li>
+<li>[ ] Book stage uses real calendar availability and clear confirmation language</li>
+<li>[ ] Sales handoff includes contact, thread summary, next step, and source campaign</li>
+</ul>
+<p><strong>Pass when:</strong> you can point at input → result → how you checked it for each stage.</p>
+<hr>
+<h2>4. Testable success checks (before go-live)</h2>
+<p>Start with a task small enough to describe and a result clear enough to check.</p>
+<p>Run a dry run on a fixed sample (for example 10-20 contacts the team already knows).</p>
+<ul>
+<li>[ ] Right contacts selected (ICP match rate on the sample)</li>
+<li>[ ] Right exclusion rules applied (no known clients / unsubscribes in the sample)</li>
+<li>[ ] Drafts use approved facts only (product, offer, proof, CTA)</li>
+<li>[ ] Tone matches the voice guide (humanizer / style rules applied after facts)</li>
+<li>[ ] Links and booking URL correct</li>
+<li>[ ] Reply drafts do not invent pricing, guarantees, or availability</li>
+<li>[ ] Booking path creates the correct event / hold</li>
+<li>[ ] Sales handoff fields complete and readable</li>
+<li>[ ] Side-by-side review with a trusted human sample: useful, not just "sounds good"</li>
+</ul>
+<p><strong>Pass when:</strong> every failed check has a named fix, not a vague rebuild.</p>
+<hr>
+<h2>5. Human handoff and approval rules</h2>
+<p>Do not let the agent send into a network without clear gates.</p>
+<ul>
+<li>[ ] First-send approval: human signs off on the sequence before live</li>
+<li>[ ] Reply approval: which reply classes auto-draft only vs need send approval</li>
+<li>[ ] Escalation list: anger, legal, press, VIP, refund, competitor</li>
+<li>[ ] Logging: every send and reply classification stored with timestamp and contact id</li>
+<li>[ ] Kill switch: who can pause the agent, and how fast</li>
+<li>[ ] Daily / weekly review owner named</li>
+</ul>
+<p><strong>Default safe posture:</strong> draft-only until the sample set passes. Expand autonomy only after checks stay green.</p>
+<hr>
+<h2>6. Do not ship</h2>
+<p>Stop. Fix these before any live inbox is connected.</p>
+<ul>
+<li>[ ] No clear recurring job definition</li>
+<li>[ ] Four inputs incomplete or only guessed</li>
+<li>[ ] No trusted finished examples to compare against</li>
+<li>[ ] Invented offers, metrics, or testimonials in copy</li>
+<li>[ ] No unsubscribe / suppression handling</li>
+<li>[ ] No human approval path for sensitive replies</li>
+<li>[ ] No sales handoff destination</li>
+<li>[ ] No kill switch or logging</li>
+<li>[ ] Sending platform warm-up / domain posture unreviewed by the operator</li>
+<li>[ ] Agent allowed to expand to "run the whole company" before one stage works</li>
+</ul>
+<hr>
+<h2>7. Go-live gate (sign-off)</h2>
+<p>Operator: _______________________ Date: __________</p>
+<p>Client / owner (if any): _______________________ Date: __________</p>
+<ul>
+<li>[ ] Sections 1-6 complete</li>
+<li>[ ] Dry-run sample reviewed and accepted</li>
+<li>[ ] Approval rules written and understood</li>
+<li>[ ] Booking link / calendar confirmed: _______________________</li>
+<li>[ ] First live cohort size limited: __________ contacts</li>
+<li>[ ] Review checkpoint scheduled after first live window</li>
+</ul>
+<hr>
+<h2>How to use this with OpenClaw Insider</h2>
+<p class="step">1. Fill sections 1-2 with the client (or your own outbound).</p>
+<p class="step">2. Map section 3 to one narrow first version (often: write + human-approved replies).</p>
+<p class="step">3. Run section 4 on a sample before tools feel "done."</p>
+<p class="step">4. Keep section 5 strict until the sample stays clean.</p>
+<p class="step">5. Treat section 6 as a hard stop list.</p>
+<p>If you want help walking verification or building the cold email agent with you, book a call: <a href="https://cal.com/ty-shane-howell/book-your-call">https://cal.com/ty-shane-howell/book-your-call</a></p>
+<hr>
+<p><em>Ty Shane · OpenClaw Insider · 10x Cold Leads · clawrevops.ai</em></p>
+<p><em>This checklist is a build and verification aid. It is not a guarantee of replies, bookings, or revenue.</em></p>
+</body>
+</html>
